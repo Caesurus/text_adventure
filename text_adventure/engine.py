@@ -67,8 +67,8 @@ class TextAdventureEngine:
             if direction is None:
                 print('try again, with a valid choice this time please')
             else:
-                print(f'you chose: {player_choice} -> {direction}')
+                self.logger.debug(f'you chose: {player_choice} -> {direction}')
                 new_room = current_room.get_next_room(direction)
                 current_room = new_room
 
-        print('You win!')
+        print(current_room.description)

@@ -1,7 +1,7 @@
 class AdventureRoom:
     def __init__(self, name, description='', is_end=False):
         self.name = name
-        self.inner_description = description
+        self.description = description
         self.connections = {}
         self.is_end = is_end
 
