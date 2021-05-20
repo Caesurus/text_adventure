@@ -7,8 +7,8 @@ So decided to roll my own. It's rudimentary, but functional.
 
 ## Install:
 `pip install git+https://github.com/Caesurus/text_adventure.git`
-
-Maybe I'll add it to pypi some day
+Or
+`pip install text_adventure-caesurus`
 
 ## Usage:
 ```python
