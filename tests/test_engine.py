@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from text_adventure.engine import TextAdventureEngine
+from text_adventure import TextAdventureEngine
 
 
 class TextAdventureEngineTestCase(unittest.TestCase):

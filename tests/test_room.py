@@ -1,6 +1,6 @@
 import unittest
 
-from text_adventure.room import AdventureRoom
+from text_adventure import AdventureRoom
 
 
 class AdventureRoomTestCase(unittest.TestCase):
