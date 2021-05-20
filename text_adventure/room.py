@@ -24,3 +24,16 @@ class AdventureRoom:
     def get_next_room(self, direction):
         if direction in self.connections:
             return self.connections[direction].get('room')
+
+    def __str__(self):
+        output = f'''
+    Name:        "{self.name}"
+    Description: "{self.description}"
+    is_end:      "{self.is_end}"
+'''
+        if self.connections:
+            output += "\tConnections: \n"
+            for i in self.connections:
+                output += f'\t "{i} -> {self.connections[i].get("description")}"'
+
+        return output

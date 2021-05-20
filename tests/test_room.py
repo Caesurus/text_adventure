@@ -33,5 +33,20 @@ class AdventureRoomTestCase(unittest.TestCase):
         room1.connect(direction='left', room=room2, description='you see a doorway to your left')
         self.assertEqual(['left'], room1.options)
 
+    def test_string_representation(self):
+        room1 = AdventureRoom('room1', 'desc room1')
+        room2 = AdventureRoom('room2', 'desc room2')
+        room1.connect(direction='left', room=room2, description='you see a doorway to your left')
+
+        expected = '''
+    Name:        "room1"
+    Description: "desc room1"
+    is_end:      "False"
+	Connections: 
+	 "left -> you see a doorway to your left"'''
+        str_of = str(room1)
+        self.assertEqual(expected, str_of)
+
+
 if __name__ == '__main__':
     unittest.main()
