@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="text-adventure-caesurus",
-    version="0.1.0",
+    name="text_adventure_framework",
+    version="0.1.1",
     author="Caesurus",
     author_email="caesurus+textadventure@gmail.com",
     description="A simple text adventure building framework",
