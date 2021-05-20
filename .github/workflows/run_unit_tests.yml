@@ -13,3 +13,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Run tests
         run: python -m unittest
+      - run: echo "🍏 This job's status is ${{ job.status }}."
