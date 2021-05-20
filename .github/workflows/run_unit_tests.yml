@@ -8,12 +8,9 @@ jobs:
   test:
     timeout-minutes: 8
     runs-on: ubuntu-latest
-    env:
-      working-dir: "."
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Run tests
-          working-directory: ${{ env.working-dir }}
           run: python -m unittest
       - run: echo "🍏 This job's status is ${{ job.status }}."
