@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: pwd
-      - run: echo 'current dir'
-      - run: ls -la
       - name: Run tests
-        run: cd tests && python -m unittest
+        run: cd tests && PYTHONPATH=../ python -m unittest
       - run: echo "🍏 This job's status is ${{ job.status }}."
