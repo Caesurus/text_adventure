@@ -1,14 +1,18 @@
-# text_adventure
+# text-adventure-framework
 
-### Why create this?
+
+## Why create this?
 My son wanted to program a text adventure game using python. 
 I didn't find any frameworks in pure python that would make that easy. 
 So decided to roll my own. It's rudimentary, but functional. 
 
 ## Install:
-`pip install git+https://github.com/Caesurus/text_adventure.git`
+`pip install text-adventure-framework`
+
 Or
-`pip install text_adventure-caesurus`
+
+`pip install git+https://github.com/Caesurus/text_adventure.git`
+
 
 ## Usage:
 ```python
