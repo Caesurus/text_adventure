@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="text_adventure_framework",
-    version="0.1.1",
+    version="0.1.2",
     author="Caesurus",
     author_email="caesurus+textadventure@gmail.com",
     description="A simple text adventure building framework",
